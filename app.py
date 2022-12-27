@@ -33,7 +33,7 @@ def make_prediction():
 
     output = np.round(prediction)
 
-    return render_template('index.html', prediction_text = 'House Price is {}'.format(output))
+    return render_template('index.html', prediction_text = 'House Price is N{}'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
