@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 #Create an app  object using the flask class
-app = Flask(__name__, template_folder='template')
+app = Flask(__name__, template_folder='template', static_folder='image')
 
 
 

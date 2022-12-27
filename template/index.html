@@ -8,25 +8,22 @@
     <title>House Prices in Lekki</title>
 </head>
 
-<body style="color: #000;">
-    <div class="login">
-        <h1 style="color: blueviolet;">House Features</h1>
+<body background="../image/AirBnB.jpg">
+    <div class="login" style="background-color: rgb(68, 2, 2); height: 500px; width: 800px; border-radius: 30px; align-items: center; font-size:xx-large; margin: 120px; margin-left: 250px; padding: 70px;">
+        <h1 style="color: rgb(226, 183, 43);">House Pricing Prediction</h1>
 
         <form method='POST' action="/predict">
-        <label for="Bed">Enter the Number of Bedrooms</label>
-        <input type="text" name = "input_data1" placeholder="Beds">
-        <label for="Baths" >Enter the Number of Bathrooms</label>
-        <input type="text" name = "input_data2" placeholder="Baths">
-        <label for="Bed">Enter the Number of Toilets</label>
-        <input type="text" name = "input_data3" placeholder="BedToilets">
+        <p><label for="Bed" style="color: wheat;">Enter the Number of Bedrooms</label>
+        <input type="text" name = "input_data1" placeholder="Beds" style="height: 30px;"></p>
+        <p><label for="Baths" style="color: wheat;">Enter the Number of Bathrooms</label>
+        <input type="text" name = "input_data2" placeholder="Baths" style="height: 30px;"></p>
+        <p><label for="Bed"style="color: wheat;">Enter the Number of Toilets</label>
+        <input type="text" name = "input_data3" placeholder="BedToilets" style="height: 30px;"></p>
 
-        <p><button type="submit" class="btn btn-primary btn-block">Predict House Price</button></p>
+        <p><button type="submit" class="btn btn-primary btn-block" style="height: 30px;">Predict House Price</button></p>
         </form>
-
-        <br>
-        <br>
-        <h4 style="color:blueviolet;">
-        {{ prediction_text }}</h4>
+        <h2 style="color:rgb(226, 183, 43); font-size: xx-large;">
+        {{ prediction_text }}</h2>
 
     </div>
 </body>
